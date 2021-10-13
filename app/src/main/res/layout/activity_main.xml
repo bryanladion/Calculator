@@ -12,26 +12,41 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/inputNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:fontFamily="@font/bold"
+            android:paddingTop="10dp"
+            android:scrollHorizontally="true"
+            android:singLine="true"
+            android:text=" 01231237217"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:verticalScrollbarPosition="right">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="32dsaskdjfhs2"
-        android:textColor="@color/white"
-        android:clickable="false"
-        android:focusable="true"
-        android:scrollHorizontally="true"
-        android:singLine="true"
-        android:cursorVisible="true"
-        android:verticalScrollbarPosition="right"
-        android:background="@android:color/transparent"
-        android:paddingTop="10dp"
-        android:textAlignment="viewEnd"
-        android:textSize="50sp"
-        android:id="@+id/inputNumber">
-        
 
-    </EditText>
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ewrhkwkwejrhew"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:textSize="25sp"
+            android:ellipsze="end"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:id="@+id/result"
+            android:textAlignment="viewEnd"
+            android:padding="10dp">
+        </EditText>
 
 
     </LinearLayout>
