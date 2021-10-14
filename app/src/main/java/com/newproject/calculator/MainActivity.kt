@@ -209,6 +209,10 @@ class MainActivity : AppCompatActivity() {
         }
         var backspace:String?=null
         buttonBackSpace.setOnClickListener{
+            if(inputext.text.length==1){
+                inputext.setText(null)
+                resultext.setText(null)
+            }
             if(inputext.text.length>0){
                 val stringBuilder: StringBuilder= StringBuilder(inputext.text)
                 val find=inputext.text.toString()
@@ -217,6 +221,7 @@ class MainActivity : AppCompatActivity() {
                 if(find2.equals("+")||find2.equals("-")||find2.equals("*")||find2.equals("/")){
                     check-=1
                 }
+
                 stringBuilder.deleteCharAt(inputext.text.length-1)
                 backspace=stringBuilder.toString()
                 inputext.setText(backspace)
