@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/Screen"
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="@drawable/trans"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -92,7 +92,7 @@
             android:textColor="@color/white"
             android:background= "@android:color/transparent"
             android:gravity="center"
-            android:drawableTop="@drawable/ic_baseline_backspace_24"
+            android:drawableTop="@drawable/backspace"
             android:paddingTop="20dp"
             android:drawableTint ="@color/white">
         </Button>
