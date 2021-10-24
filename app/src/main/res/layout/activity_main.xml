@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/Screen"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#f5f5f5"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -80,7 +80,8 @@
             android:text="C"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="#7030a0"
+            android:textColor="#FFFFFF"
+            app:neumorph_backgroundColor="#00008B"
             android:background= "@android:color/transparent"
             android:gravity="center">
         </soup.neumorphism.NeumorphButton>
