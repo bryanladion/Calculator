@@ -7,30 +7,11 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import soup.neumorphism.NeumorphButton
 import javax.script.ScriptEngine
 import javax.script.ScriptEngineManager
 import javax.script.ScriptException
 
-lateinit var button1: android.widget.Button
-lateinit var button2: android.widget.Button
-lateinit var button3: android.widget.Button
-lateinit var button4: android.widget.Button
-lateinit var button5: android.widget.Button
-lateinit var button6: android.widget.Button
-lateinit var button7: android.widget.Button
-lateinit var button8: android.widget.Button
-lateinit var button9: android.widget.Button
-lateinit var button0: android.widget.Button
-lateinit var button00: android.widget.Button
-lateinit var buttonDot: android.widget.Button
-lateinit var buttonAdd: android.widget.Button
-lateinit var buttonSub: android.widget.Button
-lateinit var buttonMul: android.widget.Button
-lateinit var buttonDiv: android.widget.Button
-lateinit var buttonEqual: android.widget.Button
-lateinit var buttonPercent: android.widget.Button
-lateinit var buttonClear: android.widget.Button
-lateinit var buttonBackSpace: android.widget.Button
 
 lateinit var inputext: EditText
 lateinit var resultext: EditText
@@ -40,26 +21,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonEqual=findViewById<Button>(R.id.btnEqual)
-        buttonBackSpace=findViewById<Button>(R.id.btnBack)
-        button0=findViewById<Button>(R.id.btnZero)
-        button1=findViewById<Button>(R.id.btnOne)
-        button2=findViewById<Button>(R.id.btnTwo)
-        button3=findViewById<Button>(R.id.btnThree)
-        button4=findViewById<Button>(R.id.btnFour)
-        button5=findViewById<Button>(R.id.btnFive)
-        button6=findViewById<Button>(R.id.btnSix)
-        button7=findViewById<Button>(R.id.btnSeven)
-        button8=findViewById<Button>(R.id.btnEight)
-        button9=findViewById<Button>(R.id.btnNine)
-        button00=findViewById<Button>(R.id.btnDoubleZero)
-        buttonPercent=findViewById<Button>(R.id.btnPercent)
-        buttonClear=findViewById<Button>(R.id.btnClear)
-        buttonAdd=findViewById<Button>(R.id.btnPlus)
-        buttonSub=findViewById<Button>(R.id.btnMinus)
-        buttonMul=findViewById<Button>(R.id.btnTimes)
-        buttonDiv=findViewById<Button>(R.id.btnDivide)
-        buttonDot=findViewById<Button>(R.id.btnDot)
+        val buttonEqual=findViewById<NeumorphButton>(R.id.btnEqual)
+        val buttonBackSpace=findViewById<NeumorphButton>(R.id.btnBack)
+        val button0=findViewById<NeumorphButton>(R.id.btnZero)
+        val button1=findViewById<NeumorphButton>(R.id.btnOne)
+        val button2=findViewById<NeumorphButton>(R.id.btnTwo)
+        val button3=findViewById<NeumorphButton>(R.id.btnThree)
+        val button4=findViewById<NeumorphButton>(R.id.btnFour)
+        val button5=findViewById<NeumorphButton>(R.id.btnFive)
+        val button6=findViewById<NeumorphButton>(R.id.btnSix)
+        val button7=findViewById<NeumorphButton>(R.id.btnSeven)
+        val button8=findViewById<NeumorphButton>(R.id.btnEight)
+        val button9=findViewById<NeumorphButton>(R.id.btnNine)
+        val button00=findViewById<NeumorphButton>(R.id.btnDoubleZero)
+        val buttonPercent=findViewById<NeumorphButton>(R.id.btnPercent)
+        val buttonClear=findViewById<NeumorphButton>(R.id.btnClear)
+        val buttonAdd=findViewById<NeumorphButton>(R.id.btnPlus)
+        val buttonSub=findViewById<NeumorphButton>(R.id.btnMinus)
+        val buttonMul=findViewById<NeumorphButton>(R.id.btnTimes)
+        val buttonDiv=findViewById<NeumorphButton>(R.id.btnDivide)
+        val buttonDot=findViewById<NeumorphButton>(R.id.btnDot)
         inputext=findViewById<EditText>(R.id.etInputNumber)
         resultext=findViewById<EditText>(R.id.etResult)
 
@@ -70,20 +51,6 @@ class MainActivity : AppCompatActivity() {
         var text:String
 
 
-        button0.setOnClickListener {
-            text=inputext.text.toString()+"1"
-            inputext.setText(text)
-
-            result(text)
-
-        }
-        button0.setOnClickListener {
-            text=inputext.text.toString()+"1"
-            inputext.setText(text)
-
-            result(text)
-
-        }
         button0.setOnClickListener {
             text=inputext.text.toString()+"0"
             inputext.setText(text)
