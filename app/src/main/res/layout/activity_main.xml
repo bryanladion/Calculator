@@ -7,20 +7,33 @@
     android:layout_height="match_parent"
     android:id="@+id/Screen"
     android:orientation="vertical"
-    android:background="@drawable/trans"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+        <soup.neumorphism.NeumorphCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:neumorph_shapeType="basin">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
         <EditText
             android:id="@+id/etInputNumber"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:clickable="false"
             android:focusable="true"
             android:singleLine="true"
@@ -45,17 +58,20 @@
             android:singleLine="true"
             android:text=""
             android:textAlignment="viewEnd"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="30sp"
             >
         </EditText>
+        </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
     </LinearLayout>
     // row 1
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnClear"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -64,11 +80,11 @@
             android:text="C"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="#7030a0"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnPercent"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -77,11 +93,11 @@
             android:text="%"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -94,9 +110,9 @@
             android:gravity="center"
             android:drawableTop="@drawable/backspace"
             android:paddingTop="20dp"
-            android:drawableTint ="@color/white">
-        </Button>
-        <Button
+            android:drawableTint ="#FF0000">
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -105,17 +121,17 @@
             android:text="÷"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
+        </soup.neumorphism.NeumorphButton>
     </LinearLayout>
     // row 2
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnSeven"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -124,11 +140,11 @@
             android:text="7"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnEight"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -137,11 +153,11 @@
             android:text="8"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnNine"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -150,11 +166,11 @@
             android:text="9"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnTimes"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -164,17 +180,17 @@
             android:textAllCaps="false"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
+        </soup.neumorphism.NeumorphButton>
     </LinearLayout>
     // row 3
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnFour"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -183,11 +199,12 @@
             android:text="4"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnFive"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -196,11 +213,11 @@
             android:text="5"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -208,12 +225,12 @@
             android:layout_weight="1"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center"
             android:text="6">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnMinus"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -221,18 +238,18 @@
             android:layout_weight="1"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center"
             android:text="-">
-        </Button>
+        </soup.neumorphism.NeumorphButton>
     </LinearLayout>
     // row 4
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnOne"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -241,11 +258,11 @@
             android:text="1"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -254,11 +271,11 @@
             android:text="2"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnThree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -267,11 +284,11 @@
             android:text="3"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnPlus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -279,18 +296,18 @@
             android:layout_weight="1"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center"
             android:text="+">
-        </Button>
+        </soup.neumorphism.NeumorphButton>
     </LinearLayout>
     //ROW 5
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnDoubleZero"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -299,11 +316,11 @@
             android:text="00"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -312,11 +329,11 @@
             android:text="0"
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnDot"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -325,11 +342,11 @@
             android:text="."
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
-        <Button
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
             android:id="@+id/btnEqual"
             android:layout_width="0dp"
             android:layout_margin="5dp"
@@ -338,9 +355,9 @@
             android:text="="
             android:fontFamily="@font/bold"
             android:textSize="30sp"
-            android:textColor="@color/white"
+            android:textColor="#cc1508"
             android:background= "@android:color/transparent"
             android:gravity="center">
-        </Button>
+        </soup.neumorphism.NeumorphButton>
     </LinearLayout>
 </LinearLayout>
